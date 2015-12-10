@@ -1,5 +1,8 @@
 {
   "name": "lean-image-uploader",
+  "main": "src/lean-image-uploader.js",
+  "version": "0.1.0",
+  "private": true,
   "description": "User interface component to upload images using minimal bandwidth.",
   "contributors": [
     "Ryan Prior <priorra@uwec.edu>",
@@ -8,10 +11,8 @@
     "Nicolas Marquis <marquine@uwec.edu>",
     "Jason Root <rootj@uwec.edu>"
   ],
-  "private": true,
-  "main": "src/lean-image-uploader.js",
   "dependencies": {
-    "cropit": "git://github.com/ryanprior/lean-image-uploader",
+    "cropit": "git://github.com/ryanprior/cropit#panzoom",
     "jquery": "^2.1.4"
   },
   "devDependencies": {
