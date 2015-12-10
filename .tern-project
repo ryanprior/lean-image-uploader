@@ -1,0 +1,13 @@
+{
+  "libs": [
+    "browser",
+    "jquery"
+  ],
+  "loadEagerly": [
+    "src/lean-image-uploader.js"
+  ],
+  "plugins": {
+    "node": {},
+    "es_modules": {}
+  }
+}

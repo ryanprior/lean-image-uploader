@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Anou Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="site.css" />
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../dist/lean-image-uploader.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+	<div class="content">
+	  <div class="image-editor">
+	    <div id="btn_overlay">
+	      <div class="back-screen"></div>
+	      <div id="uploadFound_btns">
+		<label class="upload_cancel img_container left">
+		  <img src="../static/png/cancel.png" />
+		</label>
+		<label class="upload_accept img_container right">
+		  <img src="../static/png/accept.png" />
+		</label>
+	      </div>
+	      <div id="newUpload">
+		<label class="file_upload img_container center">
+		  <img src="../static/png/upload.png" />
+		  <input type="file" class="cropit-image-input custom" accept="image/*">
+		</label>
+	      </div>
+	    </div>
+	    <div class="cropit-image-preview"></div>
+	    <div class="btn_export">
+	      <div class="back-screen"></div>
+	      <input type="range" class="cropit-image-zoom-input" />
+	      <div class="actions">
+		<label class="export_cancel img_container left">
+		  <img src="../static/png/cancel.png" />
+		</label>
+		<label id="export_accept" class="img_container right">
+		  <img src="../static/png/export.png" />
+		</label>
+	      </div>
+	    </div>
+	  </div>
+	  <div id="loadingScreen" style="display:none;">
+	    <div id="img_result_container">
+	      <canvas id="img_result"></canvas>
+	    </div>
+	    <div class="btn_export">
+	      <div class="back-screen"></div>
+	      <div class="actions">
+		<label class="export_cancel img_container left">
+		  <img src="../static/png/cancel.png" />
+		</label>
+	      </div>
+	    </div>
+	    <div class="progress_bar"><div class="bar"></div></div>
+	  </div>
+	  <div id="done" style="display:none;">
+	    <div id="btn_overlay">
+	      <div class="back-screen"></div>
+	      <div id="uploadFinish_btns">
+		<label class="upload_finish img_container center">
+		  <img src="../static/png/check.png" />
+		</label>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </header>
+      <footer id="footer">
+	<div class="copyright">
+	  &copy; University of Wisconsin - <br />
+	  Eau Claire CS 485 Team 0x2
+	</div>
+      </footer>
+    </div>
+    <script language="javascript">
+      $('#container').leanImageUploader();
+    </script>
+  </body>
+</html>
