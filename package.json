@@ -11,7 +11,7 @@
   "private": true,
   "main": "src/lean-image-uploader.js",
   "dependencies": {
-    "cropit": "file:/home/ryan/dev/cropit",
+    "cropit": "git://github.com/ryanprior/lean-image-uploader",
     "jquery": "^2.1.4"
   },
   "devDependencies": {
